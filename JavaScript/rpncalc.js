@@ -6,7 +6,7 @@
 
 function calc(expr) {
     // TODO: Your awesome code here
-    var operators = /([\/\+\-\*])/i
+    var operators = /([/+\-*])/i
     var expressionVector = expr.split(" ") 
     
     if (expressionVector === [])
@@ -22,7 +22,7 @@ function calc(expr) {
 }
 
 function operation(exprVector) {
-    var operators = /([\/\+\-\*])/i
+    var operators = /([/+\-*])/i
     var op = exprVector.find(val => operators.test(val))
     console.log("Operación: " + op)
     var opIndex = exprVector.indexOf(op)
